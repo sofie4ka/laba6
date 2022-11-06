@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>39th FIG RG World Championships</title>
+    <meta name="description" content="description of the competition">
+    <meta name="author" content="Sofie4ka">
+    <meta name="keywords" content="competitions,rhythmic gymnastics">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+</head>
+<body class="homepage">
+<header class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a href="" class="navbar-brand"><img class="logo"
+                                             src="logo.png"
+                                             alt="logo"></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto mb-2">
+            <li class="nav-item">
+                <a href="laba2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="newshtml.html" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+                <a href="faqhtml.html" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="contacthtml.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a href="tablehtml.html" class="nav-link">Table</a>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <button class="btn btn-outline-light"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                     data-target="#signIn">Sign In</a></button>
+            <button class="btn btn-outline-light ml-3"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                          data-target="#logIn">Log In</a></button>
+        </form>
+    </div>
+</header>
+<div class="modal fade" id="signIn" tabindex="-1"
+     aria-labelledby="signInLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="signInLabel">Registration&#128151</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form novalidate onsubmit="return false;">
+                    <div class="row mb-3">
+                        <label for="email" class="col-sm-2 col-form-label">E-Mail</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-email" id="email"
+                                   placeholder="ivan.ivanov@gmail.com">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="pass" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control js-input" id="pass" placeholder="*********">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="name" class="col-sm-4 col-form-label">Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control js-input js-input-name" id="name"
+                                   placeholder="Софієчка">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="surname" class="col-sm-4 col-form-label">Surname</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control js-input js-input-surname" id="surname"
+                                   placeholder="Мендик">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="middleName" class="col-sm-4 col-form-label">Middle name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control js-input js-input-father" id="middleName"
+                                   placeholder="Ігорівна">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="date" class="col-sm-4 col-form-label">Date of birth</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control js-input js-input-date" id="date"
+                                   min="1990-01-01" max="2007-12-31">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="number" class="col-sm-4 col-form-label">Phone number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control phone-number js-input js-input-number" id="number"
+                                   placeholder="+380(00)000-00-00">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Gender selection</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="boy" value="Boy"
+                                       checked>
+                                <label for="boy" class="form-check-label">Boy</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="girl" value="Girl">
+                                <label for="girl" class="form-check-label">Girl</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="other"
+                                       value="Other">
+                                <label for="other" class="form-check-label">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Group selection</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios1" value="ІА-11"
+                                       checked>
+                                <label for="radios1" class="form-check-label">ІА-11</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios2"
+                                       value="ІА-12">
+                                <label for="radios2" class="form-check-label">ІА-12</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios3"
+                                       value="ІА-13">
+                                <label for="radios3" class="form-check-label">ІА-13</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios4"
+                                       value="ІА-14">
+                                <label for="radios4" class="form-check-label">ІА-14</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validation" class="col-sm-12 col-form-label message"></label>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button onclick="addHtmlTableRow()" class="btn btn-secondary buttonlog">Register</button>
+                        <button onclick="editHtmlTableSelectedRow()" class="btn btn-secondary buttonlog">Edit</button>
+                        <input type="button" class="btn btn-secondary buttonlog active" value="Delete rows"
+                               onclick="DeleteTableRow('table')"/>
+                        <input type="button" class="btn btn-secondary buttonlog active" value="Add rows"
+                               onclick="copyRows(table)"/>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="table-responsive-lg">
+                            <table id="table" class="table table-light table-striped table-hover col-6">
+                                <tbody>
+                                <tr>
+                                    <th>Checkbox</th>
+                                    <th>E-Mail</th>
+                                    <th>Password</th>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                    <th>Middle name</th>
+                                    <th>Date of birth</th>
+                                    <th>Phone number</th>
+                                    <th>Gender</th>
+                                    <th>Group</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="logIn" tabindex="-1"
+     aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-window">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="loginModalLabel">Entrance</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row mb-3">
+                        <label for="logEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="logEmail">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="logPass" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="logPass">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary buttonlog">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+
+<main>
+    <div class="row">
+        <div class="col-lg-2 col-sm-12 aside">
+            <ul>
+                <li><a href="https://live.fig-gymnastics.com/schedule.php?idevent=16058" target="_blank"><strong>Competition
+                    Schedule</strong></a></li>
+                <li><a href="https://live.fig-gymnastics.com/news_display.php?idevent=16058&urlnews=3612519&keyword="
+                       target="_blank"><strong>About</strong></a></li>
+                <li><a href="https://live.fig-gymnastics.com/link.php?id=4053" target="_blank"><strong>Start
+                    List</strong></a>
+                </li>
+                <li><a href="https://live.gymnastics.sport/live/16058/indfinal.php?app=aa" target="_blank"><strong>Live
+                    Scoring</strong></a></li>
+                <li><a href="https://live.fig-gymnastics.com/link.php?id=4070" target="_blank"><strong>Results</strong></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-10 cols-sm-12">
+            <div class="row">
+                <div class="colg-lg-4 cols-sm-6 px-5 py-5">
+                    <img class="w-90" src="Sofia.png" alt="RAFFAELI Sofia">
+                </div>
+                <div class="colg-lg-4 cols-sm-6 px-5 py-5">
+                    <img class="w-90" src="Darja.png" alt="VARFOLOMEEV Darja">
+                </div>
+                <div class="colg-lg-4 cols-sm-6 px-5 py-5">
+                    <img class="w-90" src="Stili.png" alt="NIKOLOVA Stiliana">
+                </div>
+                <div class="colg-lg-4 cols-sm-6 px-5 py-5">
+                    <img class="w-90" src="Vika.png" alt="ONOPRIIENKO Viktoriia">
+                </div>
+                <div class="colg-lg-4 cols-sm-6 px-5 py-5">
+                    <img class="w-90" src="Mili.png" alt="BALDASSARRI Milena">
+                </div>
+                <div class="colg-lg-4 cols-sm-6 px-5 py-5">
+                    <img class="w-90" src="Adi.png" alt="KATZ Adi Asya">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="table-responsive-lg">
+                <table class="table table-light table-striped table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Rotation 1</th>
+                        <th>Rotation 2</th>
+                        <th>Rotation 3</th>
+                        <th>Rotation 4</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Rafaelli</td>
+                        <td>Sofia</td>
+                        <td>33.800</td>
+                        <td>34.250</td>
+                        <td>32.250</td>
+                        <td>32.950</td>
+                        <td><strong>133.250</strong></td>
+
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>VARFOLOMEEV</td>
+                        <td>Darja</td>
+                        <td>32.850</td>
+                        <td>33.400</td>
+                        <td>33.750</td>
+                        <td>32.450</td>
+                        <td><strong>132.450</strong></td>
+
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>NIKOLOVA</td>
+                        <td>Stiliana</td>
+                        <td>33.450</td>
+                        <td>32.600</td>
+                        <td>32.600</td>
+                        <td> 30.150</td>
+                        <td><strong>128.800</strong></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <p>
+                Italy! Germany! Slovenia! Mexico! Azerbaijan! Everywhere you looked during the 39th Rhythmic Gymnastics
+                World Championships, gymnasts were recording new all-time best results, rewriting the sport’s history
+                books.
+                That the Mediterranean wind that whirled through Sofia’s (BUL) Arena Armeec last week was generated by
+                a young woman also called Sofia is one of the quirks of a World Championships that will go down as one
+                of the most exciting ever.
+                With six of a possible nine golds, Italian gymnasts led by superstar Sofia Raffaeli (ITA) were the
+                dominant
+                force of a World Championships unlike any that has come before. Raffaeli, the most successful gymnast of
+                the World Cup series in 2022, lived up to her pre-competition hype, winning titles with the Hoop, Ball,
+                and Ribbon, then capturing the All-Around.
+            </p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <p>
+                Bulgaria and Italy each added a World title to their impressive medal hauls as the Rhythmic Gymnastics
+                World Championships drew to a close Sunday in Sofia (BUL).
+                Two Group finals — with the 5 Hoops and the 3 Ribbons/2 Balls — took place as the curtain fell on the
+                39th
+                edition of the World Championships, with familiar faces mounting the top steps of the podium in both
+                events.
+                Italy’s “Farfalle,” on the rebound from their disappointing fourth-place All-Around finish Friday,
+                stormed
+                the carpet with a hard-driving performance to “They Don’t Really Care About Us” for 34.950 points for
+                gold
+                with the 5 Hoops.
+                The Bulgarians returned to the carpet after their own disappointment with the 5 Hoops to end the
+                championships with the gold medal for their 3 Ribbons/2 Balls routine, a performance that mixed
+                Bulgarian folklore with contemporary elements.
+            </p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center w-100">
+        <div class="lds-heart">
+            <div></div>
+        </div>
+    </div>
+</main>
+<hr>
+<footer class="text-center pt-4 my-md-5 pt-md-5 border-top ">
+    <div class="row">
+        <div class="col-12 col-md">
+            <h5>Social Media</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://instagram.com/figymnastics" target="_blank">Instagram</a></li>
+                <li><a href="http://www.facebook.com/fig.gym" target="_blank">Facebook</a></li>
+                <li><a href="http://www.youtube.com/user/figchannel" target="_blank">YouTube</a></li>
+                <li><a href="https://twitter.com/gymnastics" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/company/fédération-internationale-de-gymnastique" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Additional Information</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.gymnastics.sport/site/about.php#google-maps" target="_blank">Contact Us</a>
+                </li>
+                <li><a href="https://www.gymnastics.sport/site/pages/privacy.php" target="_blank">Privacy Notice</a>
+                </li>
+                <li><a href="https://www.gymnastics.sport/site/opportunities/jobs.php" target="_blank">Job
+                    Opportunities</a></li>
+                <li><a href="https://www.web-sts.com/" target="_blank">Sport Training System</a></li>
+                <li><a href="https://www.fig-photos.com/en" target="_blank">Photos</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>News</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://live.fig-gymnastics.com/news_display.php?idevent=16058&urlnews=3620923&keyword="
+                       target="_blank">History Makes</a></li>
+                <li><a href="https://live.fig-gymnastics.com/news_display.php?idevent=16058&urlnews=3619902&keyword="
+                       target="_blank">Groups</a></li>
+                <li><a href="https://live.fig-gymnastics.com/news_display.php?idevent=16058&urlnews=3617430&keyword="
+                       target="_blank">New Star</a></li>
+                <li><a href="https://live.fig-gymnastics.com/news_display.php?idevent=16058&urlnews=3616717&keyword="
+                       target="_blank">All-Round Gold</a></li>
+                <li><a href="https://live.fig-gymnastics.com/news_display.php?idevent=16058&urlnews=3611396&keyword="
+                       target="_blank">First Quota's</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Contacts</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="tel:+447862957851">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/team_ukraine_rg" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:mendyksofi28@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ig.me/j/Abbxtj6iWlrJZ4dZ/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="imask.js"></script>
+    <script src="phoneNumber.js"></script>
+    <script src="validation.js"></script>
+</footer>
+</body>
+</html>
